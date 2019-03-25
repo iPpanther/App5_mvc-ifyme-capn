@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		D22098D822489AD7000440A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22098D722489AD7000440A3 /* AppDelegate.swift */; };
-		D22098DA22489AD7000440A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22098D922489AD7000440A3 /* ViewController.swift */; };
+		D22098DA22489AD7000440A3 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22098D922489AD7000440A3 /* Controller.swift */; };
 		D22098DD22489AD7000440A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22098DB22489AD7000440A3 /* Main.storyboard */; };
 		D22098DF22489AD8000440A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D22098DE22489AD8000440A3 /* Assets.xcassets */; };
 		D22098E222489AD8000440A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22098E022489AD8000440A3 /* LaunchScreen.storyboard */; };
+		D22098ED22489D11000440A3 /* AppleProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22098EC22489D11000440A3 /* AppleProduct.swift */; };
+		D22098EF22489E96000440A3 /* CustomPrettyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22098EE22489E96000440A3 /* CustomPrettyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D22098D422489AD7000440A3 /* mvc-ifyme-capn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mvc-ifyme-capn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22098D722489AD7000440A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D22098D922489AD7000440A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D22098D922489AD7000440A3 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		D22098DC22489AD7000440A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D22098DE22489AD8000440A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D22098E122489AD8000440A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D22098E322489AD8000440A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D22098EC22489D11000440A3 /* AppleProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleProduct.swift; sourceTree = "<group>"; };
+		D22098EE22489E96000440A3 /* CustomPrettyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPrettyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		D22098D622489AD7000440A3 /* mvc-ifyme-capn */ = {
 			isa = PBXGroup;
 			children = (
+				D22098EB22489BBD000440A3 /* Model */,
+				D22098E922489BA3000440A3 /* View */,
+				D22098EA22489BB4000440A3 /* Controller */,
 				D22098D722489AD7000440A3 /* AppDelegate.swift */,
-				D22098D922489AD7000440A3 /* ViewController.swift */,
 				D22098DB22489AD7000440A3 /* Main.storyboard */,
 				D22098DE22489AD8000440A3 /* Assets.xcassets */,
 				D22098E022489AD8000440A3 /* LaunchScreen.storyboard */,
 				D22098E322489AD8000440A3 /* Info.plist */,
 			);
 			path = "mvc-ifyme-capn";
+			sourceTree = "<group>";
+		};
+		D22098E922489BA3000440A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D22098EE22489E96000440A3 /* CustomPrettyView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D22098EA22489BB4000440A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D22098D922489AD7000440A3 /* Controller.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D22098EB22489BBD000440A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D22098EC22489D11000440A3 /* AppleProduct.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D22098DA22489AD7000440A3 /* ViewController.swift in Sources */,
+				D22098ED22489D11000440A3 /* AppleProduct.swift in Sources */,
+				D22098DA22489AD7000440A3 /* Controller.swift in Sources */,
 				D22098D822489AD7000440A3 /* AppDelegate.swift in Sources */,
+				D22098EF22489E96000440A3 /* CustomPrettyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
